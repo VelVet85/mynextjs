@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:security/recommended",
+    "plugin:promise/recommended"
+  ],
+  "plugins": ["prefer-arrow"],
+  "rules": {
+    "prefer-arrow/prefer-arrow-functions": "error"
+  }
 }
